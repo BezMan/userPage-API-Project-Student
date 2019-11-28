@@ -11,6 +11,30 @@
 
 </head>
 
+
+<script id="user-template" type="text/x-handlebars-template">
+    <img id="profile-pic" src={{picture}}>
+    <p class="user-info">{{name}}
+        <br>{{address}}
+    </p>
+</script>
+
+
+<script id="friends-template" type="text/x-handlebars-template">
+    
+    {{#each items}}
+    <p class="friends"> {{first}} {{last}}  </p>
+    {{/each}}
+
+</script>
+
+
+
+
+
+
+
+
 <body>
     <div class="container">	
         <div class="user-container"></div>	

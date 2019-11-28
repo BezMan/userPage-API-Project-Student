@@ -5,3 +5,7 @@ const apiManager = new APIManager()
 const renderer = new Renderer()
 
 apiManager.loadData()
+
+//simulating delay, fetch all data before rendering//
+setTimeout(function(){ renderer.render(apiManager.data) }, 1500)
+

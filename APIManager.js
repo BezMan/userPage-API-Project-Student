@@ -45,7 +45,6 @@ class APIManager {
       context: this, //opens our access to - this
       url: `https://pokeapi.co/api/v2/pokemon/${id}/`,
       success: function(result) {
-        // this.data.pokemonData = result.map(res => res.species.name);
         let pokemon = {name: result.species.name, image: result.sprites.front_default} 
         this.data.pokemonData = pokemon
         console.log(this.data.pokemonData)
@@ -58,7 +57,6 @@ class APIManager {
       context: this, //opens our access to - this
       url: `https://baconipsum.com/api/?type=all-meat`,
       success: function(result) {
-        // this.data.pokemonData = result.map(res => res.species.name);
         this.data.meatText = result
         console.log(this.data.meatText)
       }
